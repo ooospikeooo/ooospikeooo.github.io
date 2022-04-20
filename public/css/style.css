@@ -276,6 +276,10 @@ header.home {
 	width: 80px;
 }
 
+.post {
+	max-width : 1024px;
+}
+
 .author .author-image {
   float: left;
   margin-right: 20px;
