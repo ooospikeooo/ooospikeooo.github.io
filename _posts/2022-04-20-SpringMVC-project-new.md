@@ -90,7 +90,7 @@ Maven에서 다운받은 라이브러리들이 WEB-INF > lib 폴더로 들어간
     }
     ```
 
-12. WEB-INF 폴더에 views 폴더를 만들고 test.jsp 파일을 만든다.
+12. WEB-INF 폴더에 views 폴더를 만들고 test.jsp 파일을 만든다. webapp > WEB-INF > index.jsp 파일은 지워준다.
 
     ![](/public/img/post/2022-04-20-SpringMVC-project-new/spring_mvc_project_new_16.png)
 
