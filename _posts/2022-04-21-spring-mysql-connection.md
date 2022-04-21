@@ -6,12 +6,12 @@ category: spring
 tags: [spring, mysql]
 ---
 
+# 목표
+* spring test에서 mysql db에 연결을 테스트 한다.
+
 # 준비사항
 * mysql local 서버
 * spring test
-
-# 목표
-* spring test에서 mysql db에 연결을 테스트 한다.
 
 ## dependency 추가
 1. pom.xml에 dependency를 추가한다.

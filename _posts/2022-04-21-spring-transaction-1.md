@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spring Transaction 1
+title: Spring Transaction 1 - 기본사항들
 # date: 2022-04-21 16:18:00 +0900
 category: spring
 tags: [spring, transaction]

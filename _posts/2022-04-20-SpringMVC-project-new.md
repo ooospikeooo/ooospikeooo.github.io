@@ -6,6 +6,9 @@ category: spring
 tags: [spring, mvc, intellij]
 ---
 
+# 목표
+* intellij에서 spring mvc 프로젝트를 생성하고 jsp페이지가 정상적으로 뜨는지 테스트한다.
+
 ## 프로젝트 생성
 1. FIle > New >  Project 선택
 1. New Project 창에서 설정
