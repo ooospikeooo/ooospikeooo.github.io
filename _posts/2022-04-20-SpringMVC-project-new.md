@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spring MVC Project 만들기
+title: IntelliJ에서 Spring MVC Project 만들기
 date: 2022-04-20 10:38:00 +0900
 category: Spring
 ---
