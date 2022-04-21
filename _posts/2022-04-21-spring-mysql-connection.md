@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spring Mysql연결하기
-# date: 2022-04-20 10:38:00 +0900
+# date: 2022-04-21 10:38:00 +0900
 category: Spring
 ---
 
