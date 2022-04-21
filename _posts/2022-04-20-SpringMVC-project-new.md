@@ -32,11 +32,13 @@ category: Spring
 
 
 ## 폴더구조 변경
-1. web 폴더를 src/main/ 아래로 옮기고, 폴더 이름을 webapp으로 변경한다. 안해줘도 되지만 pom파일을 수정하면 intelliJ가 자동으로 프로젝트 module 설정을 변경해버려서 매번 수정해 줘야하는 번거로움이 있다.
+1. web 폴더를 src/main/ 아래로 옮기고, 폴더 이름을 webapp으로 변경한다. 
 
     ![](/public/img/post/2022-04-20-SpringMVC-project-new/spring_mvc_project_new_09.png)
 
     ![](/public/img/post/2022-04-20-SpringMVC-project-new/spring_mvc_project_new_10.png)
+
+    * 안해줘도 되지만 pom파일에 `<packaging>war</packaging>`를 추가했을 때, 이후에 pom파일을 수정하면 intelliJ가 자동으로 프로젝트 module 설정을 변경해버려서 매번 수정해 줘야하는 번거로움이 있다.
 
 1. File > Project Structure > Facets 에서 Web Resource Directory 폴더를 제대로 설정해준다.
 
