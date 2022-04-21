@@ -188,3 +188,6 @@ Maven에서 다운받은 라이브러리들이 WEB-INF > lib 폴더로 들어간
     </component>
     ```
     코드가 포함되어 있는 경우가 있는데, 지워주면 잘 된다 ;;;;
+
+### git 
+    https://github.com/ooospikeooo/SpringMVCTest.git
