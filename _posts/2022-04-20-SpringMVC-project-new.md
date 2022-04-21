@@ -8,15 +8,15 @@ category: Spring
 1. FIle > New >  Project 선택
 2. New Project 창에서 설정
 
-    ![](/public/img/post/2022-04-20-SpringMVC-project-new/spring_mvc_project_new_01.png)
+    ![title](/public/img/post/2022-04-20-SpringMVC-project-new/spring_mvc_project_new_01.png)
 
-    ![](/public/img/post/2022-04-20-SpringMVC-project-new/spring_mvc_project_new_02.png)
+    ![](/public/img/post/2022-04-20-SpringMVC-project-new/spring_mvc_project_new_02.png){: width="600"}
 
 3. Add Frameworks Support > Spring MVC 선택
 
     ![](/public/img/post/2022-04-20-SpringMVC-project-new/spring_mvc_project_new_03.png)
 
-    ![](/public/img/post/2022-04-20-SpringMVC-project-new/spring_mvc_project_new_04.png)
+    ![](/public/img/post/2022-04-20-SpringMVC-project-new/spring_mvc_project_new_04.png){: width="600"}
 
 4. Maven을 이용해서 라이브러리를 관리할 것이므로, 자동으로 생성된 lib 폴더를 삭제해 준다.
 
@@ -24,7 +24,7 @@ category: Spring
 
 5. pom.xml 파일에서 spring-webmvc를 추가한다.
 
-    ![](/public/img/post/2022-04-20-SpringMVC-project-new/spring_mvc_project_new_06.png)
+    ![](/public/img/post/2022-04-20-SpringMVC-project-new/spring_mvc_project_new_06.png){: width="600"}
 
     ```xml
     <properties>
@@ -65,7 +65,10 @@ category: Spring
 10. File > Project Structure > Artifacts 에서 Available Elements 부분에서 프로젝트 폴더를 선택하고 오른쪽 마우스를 클릭 후 'Put into Output Root'를 선택한다. 
 Maven에서 다운받은 라이브러리들이 WEB-INF > lib 폴더로 들어간다.
 수동으로 하지 않고 IntelliJ가 자동으로 해주는 경우가 있던데 어떻게 설정하는 지 모르겠다. 그렇게 설정되면 'Output Layout' 옆에 'Maven'이라는 항목이 생성된다.
-->pom.xml에 `<packaging>war</packaging>` 추가하면됨...
+
+    ->pom.xml에 `<packaging>war</packaging>` 추가하면됨... 
+    
+    안하면 git에 올리고 다시 받을때, web모듈이 빠져버려서 다시 수동으로 설정해줘야한다;;;
 
     ![](/public/img/post/2022-04-20-SpringMVC-project-new/spring_mvc_project_new_13.png)
 
