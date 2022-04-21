@@ -71,15 +71,16 @@ category: Spring
 
 1. File > Project Structure > Artifacts 에서 Available Elements 부분에서 프로젝트 폴더를 선택하고 오른쪽 마우스를 클릭 후 'Put into Output Root'를 선택한다. 
 Maven에서 다운받은 라이브러리들이 WEB-INF > lib 폴더로 들어간다.
+
+    ![](/public/img/post/2022-04-20-SpringMVC-project-new/spring_mvc_project_new_13.png)
+
+    ![](/public/img/post/2022-04-20-SpringMVC-project-new/spring_mvc_project_new_14.png)
+
     * 수동으로 하지 않고 IntelliJ가 자동으로 해주는 경우가 있던데 어떻게 설정하는 지 모르겠다. 그렇게 설정되면 'Output Layout' 옆에 'Maven'이라는 항목이 생성된다.
 
     * ->pom.xml에 `<packaging>war</packaging>` 추가하면됨.
     
     * 안하면 git에 올리고 다시 받을때, 이것 말고도 web모듈이 빠져버려서 다시 수동으로 설정해줘야한다.
-
-    ![](/public/img/post/2022-04-20-SpringMVC-project-new/spring_mvc_project_new_13.png)
-
-    ![](/public/img/post/2022-04-20-SpringMVC-project-new/spring_mvc_project_new_14.png)
 
 ## web 설정, spring 설정
 1. web.xml 파일의 내용을 수정한다.
