@@ -54,5 +54,5 @@ tags: [spring, transaction]
 * Spring Transaction 설정은 xml, annotation, programming 을 통해서 할 수 있다.
 
 ## 주의점
-* 같은 클래스내의 transaction method 호출시 proxy 주입이 안되므로 트랜잭션이 자동으로 동작하지 않는다.
+* 같은 클래스내의 transaction method 호출시 proxy 주입이 안되므로 트랜잭션이 자동으로 동작하지 않는다.(JDK경우)
 * private로 설정된 method도 트랜잭션 동작하지 않는다. 에러도 안난다.
