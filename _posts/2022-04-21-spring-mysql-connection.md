@@ -10,11 +10,9 @@ category: Spring
 * spring test
 
 # 목표
-* spring test에서 mysql db에 연결한다.
-* mysql에 테이블을 생성한다.
-* spring에서 mysql db에 insert 테스트해본다.
+* spring test에서 mysql db에 연결을 테스트 한다.
 
-### spring test에서 mysql db에 연결한다.
+## dependency 추가
 1. pom.xml에 dependency를 추가한다.
     ```xml
     <dependency>
@@ -41,6 +39,7 @@ category: Spring
     </dependency>
     ```
 
+## 코드 작성
 1. test > java 폴더에 테스트용 java 파일을 생성한다. MySQLTest.java로 생성하였다.
 
     ![title](/public/img/post/2022-04-spring-mysql-connection/01.png)
@@ -80,6 +79,7 @@ category: Spring
     }
     ```
 
+## 테스트
 1. test를 실행한다.
 
     ![title](/public/img/post/2022-04-spring-mysql-connection/02.png)
@@ -88,5 +88,5 @@ category: Spring
 
     ![title](/public/img/post/2022-04-spring-mysql-connection/03.png)
 
-### git
+## git
     https://github.com/ooospikeooo/SpringMySQLTest.git
