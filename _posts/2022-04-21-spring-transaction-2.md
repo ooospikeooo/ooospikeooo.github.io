@@ -68,6 +68,7 @@ tags: [spring, transaction]
             }
         }
         ```
+        
 ### context.xml 설정
 * applicationContext_xml.xml파일을 생성한다.
 * context.xml을 test용 java파일에서 각각 읽기때문에, Service annotation이 스캔되게끔 설정해야한다.
