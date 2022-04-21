@@ -2,7 +2,8 @@
 layout: post
 title: Spring Transaction 1
 # date: 2022-04-21 16:18:00 +0900
-category: Spring
+category: spring
+tags: [spring, transaction]
 ---
 
 # 목표
