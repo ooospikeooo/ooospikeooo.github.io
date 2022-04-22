@@ -274,4 +274,19 @@ tags: [spring, transaction, log]
   annotation으로 하면 필요한 곳에 세세하게 설정이 가능하지 싶다.
 * 그 외에 트랜잭션 설정을 하였지만, 위의 경우나, private문제 등등 실제로는 의도와 다르게 작동이 안되는 경우가 많으므로 꼭 확인해 봐야 할 것 같다.
 
+### git
+* https://github.com/ooospikeooo/SpringTransactionTest.git
+* @Resource 관련 에러가 나는 경우가 있다.
+    * 라이브러리가 없어서 난다.
+    * File > Project Structure > Project 에서 Project SDK 를 1.8 version으로 바꿔주면 안남.
+        * 1.8에는 rt.jar에 관련 라이브러리가 있는데, java 9 부터는 빠졌다고 함
+    * maven으로 해당 라이브러리만 추가해주려면
+        ```xml
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <version>1.3.2</version>
+        </dependency>
+        ```
+        을 추가해주면 됨.
 

@@ -71,7 +71,14 @@ tags: [spring, transaction]
 
 ### maven dependency 추가
 * 
+    <!--TODO:각 라이브러리 역할 살펴보기-->
     ```xml
+    <dependency>
+        <groupId>commons-dbcp</groupId>
+        <artifactId>commons-dbcp</artifactId>
+        <version>${commons-dbcp.version}</version>
+    </dependency>
+
     <dependency>
         <groupId>org.aspectj</groupId>
         <artifactId>aspectjweaver</artifactId>
