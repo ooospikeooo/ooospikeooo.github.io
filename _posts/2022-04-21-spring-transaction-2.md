@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spring Transaction 2 - 테스트(xml)
-# date: 2022-04-21 16:18:00 +0900
+date: 2022-04-21 16:18:00 +0900
 category: spring
 tags: [spring, transaction]
 ---
@@ -68,7 +68,17 @@ tags: [spring, transaction]
             }
         }
         ```
-        
+
+### maven dependency 추가
+* 
+    ```xml
+    <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjweaver</artifactId>
+        <version>1.8.0</version>
+    </dependency>
+    ```
+
 ### context.xml 설정
 * applicationContext_xml.xml파일을 생성한다.
 * context.xml을 test용 java파일에서 각각 읽기때문에, Service annotation이 스캔되게끔 설정해야한다.

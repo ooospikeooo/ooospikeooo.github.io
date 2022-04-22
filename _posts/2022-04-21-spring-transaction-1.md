@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spring Transaction 1 - 기본사항들
-# date: 2022-04-21 16:18:00 +0900
+date: 2022-04-21 16:18:00 +0900
 category: spring
 tags: [spring, transaction]
 ---
@@ -56,3 +56,5 @@ tags: [spring, transaction]
 ## 주의점
 * 같은 클래스내의 transaction method 호출시 proxy 주입이 안되므로 트랜잭션이 자동으로 동작하지 않는다.(JDK경우)
 * private로 설정된 method도 트랜잭션 동작하지 않는다. 에러도 안난다.
+* 모든 exception에 rollback 처리하는 것이 아니라, unchecked exception에서만 기본적으로 작동하게끔 되어있다. 다른 exception에서 rollback되게끔 하려면 
+따로 설정을 해 줘야한다.
