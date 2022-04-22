@@ -1,0 +1,8 @@
+{
+  "scripts":{
+    "build" : "cross-env JEKYLL_ENV=test bundle exec jekyll serve --drafts"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
