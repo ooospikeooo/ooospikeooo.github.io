@@ -35,6 +35,7 @@ plugins:
   - jekyll-feed
 category_dir: category/
 tag_dir: tag/
+google-analytics: G-0H3W0T6XVK
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -57,9 +58,9 @@ tag_dir: tag/
 #   - vendor/ruby/
 
 # Analytics
-analytics:
-  provider               : "google-gtag" 
-                          # false (default), "google", "google-universal", "google-gtag", "custom"
-  google:
-    tracking_id          : "G-0H3W0T6XVK"
-    anonymize_ip         : # true, false (default)
+# analytics:
+#   provider               : "google-gtag" 
+#                           # false (default), "google", "google-universal", "google-gtag", "custom"
+#   google:
+#     tracking_id          : "G-0H3W0T6XVK"
+#     anonymize_ip         : # true, false (default)
