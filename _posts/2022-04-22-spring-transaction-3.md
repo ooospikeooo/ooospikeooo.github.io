@@ -193,8 +193,9 @@ tags: [spring, transaction, log]
 
     ![](/public/img/post/2022-04-spring-transaction-3/03.png)
     * 로그를 통해 transaction이 생성된 것을 확인했는데도 rollback이 되지않았다.
-    * 오류발생시에 생성된 exception이 SQLException으로 checked exception이어서 transaction rollback처리 되지 않은 것이다. 
-    rollback 처리되게 하려면 설정을 해 줘야한다.
+    * 오류발생시에 생성된 exception이 SQLException으로 checked exception이어서 transaction rollback처리 되지 않은 것이다. rollback 처리되게 하려면 설정을 해 줘야한다.
+        * web module 이용하면 dispatcher에서 error 핸들링할때, 자동으로 checked exception을 unchecked exception으로 바꿔서 던져주는 것 같다. <!--TODO:web 모듈에관해 살펴보기-->
+        * test 가 아닌 spring mvc로 테스트 해보면 다른 exception이 들어오고 rollbackFor 설정을 안해줘도 transaction이 잘 동작한다. 
 
 ### 테스트 3 : @Transaction 어노테이션에 rollbackFor 옵션추가
 * @Transaction 어노테이션에 rollbackFor 옵션을 추가한다.
