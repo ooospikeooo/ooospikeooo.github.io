@@ -27,7 +27,9 @@ tags: [ubuntu]
    ![](/public/img/post/2022/kafka_1zk1kafka_ansible/ubuntu_02.png)
    ![](/public/img/post/2022/kafka_1zk1kafka_ansible/ubuntu_03.png)
    ![](/public/img/post/2022/kafka_1zk1kafka_ansible/ubuntu_04.png)
+   * Subnet, Address, Gateway, Name server 정보를 작성한다.
    ![](/public/img/post/2022/kafka_1zk1kafka_ansible/ubuntu_05.png)
+   
    ![](/public/img/post/2022/kafka_1zk1kafka_ansible/ubuntu_06.png)
   * 설정이 완료되고 공유기에도 등록이 되었다.
    ![](/public/img/post/2022/kafka_1zk1kafka_ansible/iptimes.png)
