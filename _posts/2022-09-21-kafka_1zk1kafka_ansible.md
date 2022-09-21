@@ -57,6 +57,7 @@ tags: [kafka]
 
 # ansible playbook의 파일 설정
  * '실전 카프카 개발부터 운영까지' 책의 소스로 작업하였다.
+    * https://github.com/onlybooks/kafka2/tree/main/chapter2/ansible_playbook
     * 책은 aws였지만, 설치환경은 ubuntu라서 몇개가 에러가 났다.
         * yum -> package
         * java jdk 패키지명 수정
