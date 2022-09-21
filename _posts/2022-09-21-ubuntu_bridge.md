@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bridge 네트워크 설정으로 Ubuntu 설치
-date: 2022-09-20 9:17:00 +0900
+date: 2022-09-21 9:17:00 +0900
 category: [ubuntu]
 tags: [ubuntu]
 ---

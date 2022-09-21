@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ansible 사용하여 zookeeper 설치
-date: 2022-09-20 9:17:00 +0900
+date: 2022-09-21 9:17:00 +0900
 category: [kafka]
 tags: [kafka]
 ---
