@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ansible 사용하여 kafka 설치
+title: Ansible 사용하여 zookeeper 설치
 date: 2022-09-20 9:17:00 +0900
 category: [kafka]
 tags: [kafka]
@@ -91,6 +91,7 @@ tags: [kafka]
     ```
     * myid 의 경우 brokerid 와 마찬가지
  * ./roles/common/tasks/main.yml
+
     ```
     ---
     - name: Set timezone to Asia/Seoul
@@ -103,6 +104,7 @@ tags: [kafka]
         state: latest
     ```
  * ./zookeeper.yml
+
     ```
     ---
     - hosts: zkhosts
