@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ansible 사용하여 zookeeper 설치
+title: Ansible 사용하여 zookeeper/kafka 설치
 date: 2022-09-21 9:17:00 +0900
 category: [kafka]
 tags: [kafka]
@@ -115,7 +115,50 @@ tags: [kafka]
     - common
     - zookeeper
     ```
-    * 이렇게 하면 ansible-playbook 실행시 TASK [Gathering Facts] 에서 "Missing sudo password" 에러가 발생한다.
-    * bocome: ture 로 privilege 조정시 default로 root 계정으로 되는데, 암호가 없다.
-       * -K 옵션 넣어주면 become password를 묻는 prompt가 나타난다.
- 
+
+# zookeeper 설치
+  ```
+  ansible_playbook -i hosts zookeeper.yml
+  ```
+  * 이렇게 하면 ansible-playbook 실행시 TASK [Gathering Facts] 에서 "Missing sudo password" 에러가 발생한다.
+  * bocome: ture 로 privilege 조정시 default로 root 계정으로 되는데, 암호가 없다.
+  * -K 옵션 넣어주면 become password를 묻는 prompt가 나타난다.
+
+    ```
+      ansible_playbook -i hosts zookeeper.yml -K
+    ```
+
+ # zookeeper 확인
+  ```
+  sudo systemctl status zookeeper-server
+  ```
+
+# kafka 설치
+  ```
+  ansible-playbook -i hosts kafka.yml -K
+  ```
+
+# kafka 확인
+  ```
+  sudo systemctrl status kafka-server
+  ```
+
+# producer, consummer 테스트
+ * 토픽 생성
+  ```
+  /usr/local/kafka/bin/kafka-topics.sh --bootstrap-server ansible-kafka01:9092 --create --topic test-overview01 --partitions 1 --replication-factor 1
+  ```
+
+  * consummer 생성
+  ```
+  /usr/local/kafka/bin/kafka-console-consumer.sh --bootstrap-server ansible-kafka01:9092 --topic test-overview01
+  ```
+
+  * producer 생성
+    * 새로 창을 띄운다.
+    ```
+    /usr/local/kafka/bin/kafka-console-producer.sh --bootstrap-server ansible-kafka01:9092 --topic test-overview01
+    ```
+
+  * producer 창에 > 이 나타남. 
+  * First Message 입력하면, consummer 창에 해당 메시지가 나타난다.
