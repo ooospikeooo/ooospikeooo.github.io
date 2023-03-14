@@ -11,7 +11,7 @@ tags: [myskills]
    * c/c++
    * c#
    * java
-   * javascript
+   * javascript, typescript
    * html
    * css, sass
  * FrameWork
@@ -20,9 +20,12 @@ tags: [myskills]
    * react
    * node.js
  * Tools
-   * intellij
+   * intellij, vscode
    * jmeter
    * git, svn
+   * webpack, babel
+   * maven, gradle
+   * docker
 
 
 
