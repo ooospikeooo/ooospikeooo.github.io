@@ -1,6 +1,6 @@
 ---
 layout: post
-title: s
+title: 처음 ssh 로그인시 ask 없이하기
 date: 2023-12-08 11:40:00 +0900
 category: [ssh]
 tags: [ssh]
